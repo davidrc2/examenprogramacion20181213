@@ -14,8 +14,23 @@ public class Ejercicio1 {
 	 * donde num1, num2, num3, ..., numN son los números almacenados en el vector.
 	 */
 	
-	public static ...
-	
+	public static void main(String[] args) {
+		 
+		int vec[] = new int[51];
+		int pos = 0;
+ 
+		for (int i = 0; i <= 100; i++) {
+			if (i % 2 == 0) {
+				vec[pos] = i;
+				pos ++;
+			}
+		}
+ 
+		for (int i = 0; i < vec.length; i++) {
+			System.out.println("Posición: " + "[" + i + "] = " + vec[i]);
+		}
+	}
+}
 	/* 
 	 * 1 punto
 	 * 
@@ -27,6 +42,4 @@ public class Ejercicio1 {
 	 * donde 'c1', 'c2', 'c3', ...., 'cN' son los caracteres almacenados en el vector.
 	 */
 
-	public static ...
-	
-}
+

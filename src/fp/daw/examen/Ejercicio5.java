@@ -1,5 +1,8 @@
 package fp.daw.examen;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Ejercicio5 {
 
 	/* 
@@ -14,10 +17,33 @@ public class Ejercicio5 {
 	 * de finalizar el juego.
 	 * 
 	 */
-	
+
 	public static void main(String[] args) {
+		Random r= new Random();
+		int res;
+		String respuesta="";
+		int num;
+		Scanner sc = new Scanner(System.in);
+		do {
+		do {
+			num=r.nextInt(100)+100;
+		System.out.println("dime un numer entre 100 y 200");
+		res=sc.nextInt();
+		if(res<100 || res>200) {
+			System.out.println("numero incorrecto");
+		}
 		
-
+		
+		}while(res<100 || res>200);
+		int cont=0;
+		while(num!=res) {
+				System.out.println("Respuesta incorrecta, introduzca otro numero");
+				res=sc.nextInt();
+			cont++;
+		}
+		System.out.println("respuesta correcta!   " + "numero de intentos = "+ cont);
+		System.out.println("quiere seguir jugando?");
+		respuesta=sc.next();
+		}while(respuesta.equalsIgnoreCase("si"));
 	}
-
 }

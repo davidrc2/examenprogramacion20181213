@@ -13,7 +13,6 @@ public class Ejercicio2 {
 	 *  
 	 */
 	
-	public static ...
 	
 	
 	/*
@@ -31,9 +30,15 @@ public class Ejercicio2 {
 	 * 
 	 */
 	
-	public static void main(String[] args) {
-		
+	public static int[] main(String[] args) {
+		int n = 0;
+		int[] x = new int[n];
+
+	    for(int i = 0; i < n; i++) {
+	      x[i] = (int)(Math.random()*(200 - 100 + 1) + 100);
+	    }
+	      
+	    return x;
+	  }
 		
 	}
-
-}
